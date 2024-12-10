@@ -1,0 +1,45 @@
+@media (max-width: $tablet) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .movie-grid,
+  .advantages-grid {
+    flex-direction: column;
+  }
+
+  .movie-card,
+  .advantage-item {
+    flex: 1 1 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: $desktop) {
+  .site-header .container {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 1rem;
+  }
+
+  .main-nav ul {
+    justify-content: center;
+  }
+}
+

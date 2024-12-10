@@ -1,0 +1,64 @@
+.container {
+  width: $container-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  background-color: $white;
+  padding: 1rem 0;
+  box-shadow: $box-shadow;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .container {
+    @include flex-between;
+  }
+}
+
+.hero {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  padding: 6rem 0;
+  color: $white;
+
+  &-content {
+    @include flex-between;
+  }
+
+  &-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  &-image {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.featured-movies,
+.cinema-advantages {
+  padding: 4rem 0;
+}
+
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.advantages-grid {
+  @include flex-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.site-footer {
+  background-color: $footer-bg;
+  padding: 3rem 0;
+  color: $white;
+}
+
