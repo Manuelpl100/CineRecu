@@ -9,13 +9,14 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <h1 class="site-title">Cine</h1>
+            <h1 class="site-title">Cine Ciudad</h1>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a href="Archivos/Html/Peliculas.html">Películas</a></li>
-                    <li><a href="Archivos/Html/Promociones.html">Promociones</a></li>
-                    <li><a href="Archivos/Html/Contacto.html">Contacto</a></li>
+                    <li><a href="Archivos/Html/Pago.html">Pago</a></li>
+                    <li><a href="Archivos/Html/Pelicula-detalle.html">Detalles</a></li>
+                    <li><a href="Archivos/Html/Seleccion-asiento.html">Asientos</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,29 +25,46 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Bienvenido</h2>
-                <p>Disfruta de los mejores estrenos en la mejor calidad</p>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Bienvenido a Cine Ciudad</h2>
+                        <p>Disfruta de los mejores estrenos en la mejor calidad</p>
+                        <a href="Archivos/Html/Peliculas.html" class="cta-button">Ver Cartelera</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="Archivos/Imagenes/hero-image.jpg" alt="Cine Ciudad">
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="featured-movies">
             <div class="container">
-                <h2>Estrenos Populares</h2>
+                <h2 class="section-title">Estrenos Populares</h2>
                 <div class="movie-grid">
                     <div class="movie-card">
-                        <img src="Archivos/Imagenes/imangen1.webp" height=400 width=300 alt="Película 1">
-                        <h3>Película 1</h3>
-                        <p>Género: Acción</p>
+                        <img src="Archivos/Imagenes/imangen1.webp" alt="Película 1">
+                        <div class="movie-card-content">
+                            <h3>Película 1</h3>
+                            <p>Género: Acción</p>
+                            <a href="Archivos/Html/pelicula-detalle.html?id=1" class="cta-button">Ver Detalles</a>
+                        </div>
                     </div>
                     <div class="movie-card">
-                        <img src="Archivos/Imagenes/joker.jpg" height=200 width=100 alt="Película 2">
-                        <h3>Película 2</h3>
-                        <p>Género: Comedia</p>
+                        <img src="Archivos/Imagenes/joker.jpg" alt="Película 2">
+                        <div class="movie-card-content">
+                            <h3>Película 2</h3>
+                            <p>Género: Drama</p>
+                            <a href="Archivos/Html/pelicula-detalle.html?id=2" class="cta-button">Ver Detalles</a>
+                        </div>
                     </div>
                     <div class="movie-card">
-                        <img src="" height=400 width=300 alt="Película 3">
-                        <h3>Película 3</h3>
-                        <p>Género: Drama</p>
+                        <img src="Archivos/Imagenes/pelicula3.jpg" alt="Película 3">
+                        <div class="movie-card-content">
+                            <h3>Película 3</h3>
+                            <p>Género: Comedia</p>
+                            <a href="Archivos/Html/pelicula-detalle.html?id=3" class="cta-button">Ver Detalles</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,20 +72,20 @@
 
         <section class="cinema-advantages">
             <div class="container">
-                <h2>¿Por qué elegir Cine Ciudad?</h2>
+                <h2 class="section-title">¿Por qué elegir Cine Ciudad?</h2>
                 <div class="advantages-grid">
                     <div class="advantage-item">
-                        <img src="" height=100 width=100 alt="Calidad de imagen">
+                        <img src="Archivos/Imagenes/icon-screen.png" alt="Calidad de imagen">
                         <h3>La mejor calidad de imagen</h3>
                         <p>Disfruta de nuestras pantallas 4K con tecnología láser.</p>
                     </div>
                     <div class="advantage-item">
-                        <img src="" height=100 width=100 alt="Sonido envolvente">
+                        <img src="Archivos/Imagenes/icon-sound.png" alt="Sonido envolvente">
                         <h3>Sonido envolvente</h3>
                         <p>Sumérgete en la película con nuestro sistema de sonido Dolby Atmos.</p>
                     </div>
                     <div class="advantage-item">
-                        <img src="" height=100 width=100 alt="Asientos cómodos">
+                        <img src="Archivos/Imagenes/icon-seat.png" alt="Asientos cómodos">
                         <h3>Asientos ultra cómodos</h3>
                         <p>Relájate en nuestros asientos reclinables de cuero.</p>
                     </div>
@@ -76,26 +94,43 @@
         </section>
     </main>
 
-  
-        <footer class="site-footer">
-            <div class="container">
-                <p>Contacta con nosotros: carworld@carworld.com | +34 610 32 54 53</p>
-                <p>2024 CARWORLD. Todos los derechos reservados.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 class="footer-title">Sobre Cine Ciudad</h3>
+                    <p>Disfruta de los mejores estrenos en la mejor calidad. Cine Ciudad es tu destino para una experiencia cinematográfica inolvidable.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i>+34 610 32 54 53</span>
+                        <span><i class="fas fa-envelope"></i>info@cineciudad.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="Archivos/Imagenes/Facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="Archivos/Imagenes/Instagram.jpeg" alt="Instagram">
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="Archivos/Imagenes/X.png" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+             
+                <div class="footer-section newsletter">
+                    <h3 class="footer-title">Suscríbete</h3>
+                    <p>Recibe las últimas noticias y ofertas especiales directamente en tu correo.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
+                        <button type="submit" class="btn-subscribe">Suscribirse</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="social-icons">
-                <a href="https://www.instagram.com/">
-                    <img src="Archivos/Imagenes/Instagram.jpeg" width="35">
-                </a>
-                <a href="https://www.facebook.com/">
-                    <img src="Archivos/Imagenes/Facebook.png" width="35">
-                </a>
-                <a href="https://x.com/">
-                    <img src="Archivos/Imagenes/X.png" width="35">
-                </a>                
+            <div class="footer-bottom">
+                <p>2024 Cine Ciudad. Todos los derechos reservados.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>
-
 

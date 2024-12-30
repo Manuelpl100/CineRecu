@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartelera - Cine Ciudad</title>
+    <title>Selección de Asientos - Cine Ciudad</title>
     <link rel="stylesheet" href="../Css/styless.css">
 </head>
 <body>
@@ -24,36 +24,23 @@
 
 
     <main>
-        <section class="movies-section">
+        <section class="seat-selection">
             <div class="container">
-                <h2 class="section-title">Cartelera</h2>
-                <div class="movie-grid">
-                    <div class="movie-card">
-                        <img src="../Imagenes/imangen1.webp" alt="Película 1">
-                        <div class="movie-card-content">
-                            <h3>Película 1</h3>
-                            <p>Género: Acción</p>
-                            <a href="pelicula-detalle.html?id=1" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="../Imagenes/joker.jpg" alt="Película 2">
-                        <div class="movie-card-content">
-                            <h3>Película 2</h3>
-                            <p>Género: Drama</p>
-                            <a href="pelicula-detalle.html?id=2" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="../Imagenes/pelicula3.jpg" alt="Película 3">
-                        <div class="movie-card-content">
-                            <h3>Película 3</h3>
-                            <p>Género: Comedia</p>
-                            <a href="pelicula-detalle.html?id=3" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <!-- Añadir más películas aquí -->
+                <h2 class="section-title">Selección de Asientos</h2>
+                <div class="screen">Pantalla</div>
+                <div class="seats">
+                    <!-- Los asientos se generarán dinámicamente con JavaScript -->
                 </div>
+                <div class="legend">
+                    <div class="seat available"></div> <span>Disponible</span>
+                    <div class="seat selected"></div> <span>Seleccionado</span>
+                    <div class="seat occupied"></div> <span>Ocupado</span>
+                </div>
+                <div class="summary">
+                    <p>Asientos seleccionados: <span id="count">0</span></p>
+                    <p>Precio total: $<span id="total">0</span></p>
+                </div>
+                <button id="confirm-seats" class="cta-button">Confirmar Selección</button>
             </div>
         </section>
     </main>
@@ -96,6 +83,7 @@
         </div>
     </footer>
 
+    <script src="../js/seat-selection.js"></script>
 </body>
 </html>
 

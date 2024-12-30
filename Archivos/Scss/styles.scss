@@ -4,6 +4,26 @@
 @import 'layout';
 @import 'components';
 @import 'responsive';
+@import 'global';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'movies';
+@import 'movie-detail';
+@import 'seat-selection';
+@import 'payment';
 
-// Aquí puedes agregar estilos adicionales específicos si es necesario
+// Estilos adicionales específicos
+body {
+  font-family: $main-font;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.container {
+  width: $container-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 

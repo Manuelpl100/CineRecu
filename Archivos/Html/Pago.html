@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartelera - Cine Ciudad</title>
+    <title>Pago de Entradas - Cine Ciudad</title>
     <link rel="stylesheet" href="../Css/styless.css">
 </head>
 <body>
@@ -24,36 +24,34 @@
 
 
     <main>
-        <section class="movies-section">
+        <section class="payment">
             <div class="container">
-                <h2 class="section-title">Cartelera</h2>
-                <div class="movie-grid">
-                    <div class="movie-card">
-                        <img src="../Imagenes/imangen1.webp" alt="Película 1">
-                        <div class="movie-card-content">
-                            <h3>Película 1</h3>
-                            <p>Género: Acción</p>
-                            <a href="pelicula-detalle.html?id=1" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="../Imagenes/joker.jpg" alt="Película 2">
-                        <div class="movie-card-content">
-                            <h3>Película 2</h3>
-                            <p>Género: Drama</p>
-                            <a href="pelicula-detalle.html?id=2" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="../Imagenes/pelicula3.jpg" alt="Película 3">
-                        <div class="movie-card-content">
-                            <h3>Película 3</h3>
-                            <p>Género: Comedia</p>
-                            <a href="pelicula-detalle.html?id=3" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <!-- Añadir más películas aquí -->
+                <h2 class="section-title">Resumen de Compra</h2>
+                <div id="order-summary">
+                    <!-- El resumen de la compra se generará dinámicamente con JavaScript -->
                 </div>
+                <form id="payment-form">
+                    <h3>Información de Pago</h3>
+                    <div class="form-group">
+                        <label for="card-number">Número de Tarjeta</label>
+                        <input type="text" id="card-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-name">Nombre en la Tarjeta</label>
+                        <input type="text" id="card-name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry-date">Fecha de Expiración</label>
+                            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="cta-button">Confirmar Pago</button>
+                </form>
             </div>
         </section>
     </main>
@@ -96,6 +94,7 @@
         </div>
     </footer>
 
+    <script src="../js/payment.js"></script>
 </body>
 </html>
 

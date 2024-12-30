@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartelera - Cine Ciudad</title>
+    <title>Detalles de la Película - Cine Ciudad</title>
     <link rel="stylesheet" href="../Css/styless.css">
 </head>
 <body>
@@ -24,38 +24,25 @@
 
 
     <main>
-        <section class="movies-section">
-            <div class="container">
-                <h2 class="section-title">Cartelera</h2>
-                <div class="movie-grid">
-                    <div class="movie-card">
-                        <img src="../Imagenes/imangen1.webp" alt="Película 1">
-                        <div class="movie-card-content">
-                            <h3>Película 1</h3>
-                            <p>Género: Acción</p>
-                            <a href="pelicula-detalle.html?id=1" class="cta-button">Ver Detalles</a>
-                        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../Imagenes/pelicula-detalle.jpg" alt="Título de la Película" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h1 id="movieTitle" class="mb-3">Título de la Película</h1>
+                    <p><strong>Géneros:</strong> <span id="movieGenres">Acción, Aventura</span></p>
+                    <p><strong>Actores:</strong> <span id="movieActors">Actor 1, Actor 2, Actor 3</span></p>
+                    <h3 class="mt-4">Sinopsis</h3>
+                    <p id="movieSynopsis">Aquí va la sinopsis de la película...</p>
+                    <h3 class="mt-4">Trailer</h3>
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                     </div>
-                    <div class="movie-card">
-                        <img src="../Imagenes/joker.jpg" alt="Película 2">
-                        <div class="movie-card-content">
-                            <h3>Película 2</h3>
-                            <p>Género: Drama</p>
-                            <a href="pelicula-detalle.html?id=2" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="../Imagenes/pelicula3.jpg" alt="Película 3">
-                        <div class="movie-card-content">
-                            <h3>Película 3</h3>
-                            <p>Género: Comedia</p>
-                            <a href="pelicula-detalle.html?id=3" class="cta-button">Ver Detalles</a>
-                        </div>
-                    </div>
-                    <!-- Añadir más películas aquí -->
+                    <a href="seleccion-asientos.html" class="btn btn-primary btn-lg">Comprar Entradas</a>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -96,6 +83,9 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
 
