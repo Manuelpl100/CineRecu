@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selección de Asientos - Cine Ciudad</title>
+    <title>Detalles de la Película</title>
     <link rel="stylesheet" href="../Css/styless.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <h1 class="site-title">Cine Ciudad</h1>
+            <h1 class="site-title">CineSur</h1>
             <nav class="main-nav">
                 <ul>
                     <li><a href="../../index.html">Inicio</a></li>
                     <li><a href="../Html/Peliculas.html">Películas</a></li>
-                    <li><a href="../Html/Seleccion-asiento.html">Asientos</a></li>
+
                 </ul>
             </nav>
         </div>
     </header>
 
-    
+
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 id="movieTitle" class="mb-3">La cura mortal</h1>
+                    <p><strong>Géneros:</strong> <span id="movieGenres">Ciencia ficción, Acción </span></p>
+                    <p><strong>Actores:</strong> <span id="movieActors">Wes Ball, James Dashnerq</span></p>
+                    <h3 class="mt-4">Sinopsis</h3>
+                    <p id="movieSynopsis">Thomas no puede confiar en CRUEL. La organización le borró sus recuerdos y lo encerró en el Laberinto. Luego lo dejó al borde de la muerte, 
+                        en el Desierto. Y lo separaron de los Habitantes, sus únicos amigo. Ahora CRUEL asegura que el tiempo de las mentiras ha terminado. 
+                        Con toda la información que reunió gracias a las Pruebas, está en condiciones de avanzar en la cura de la Llamarada. Pero Thomas debe pasar por la Prueba Final. 
+                        ¿Logrará sobrevivir al procedimiento? ¿Será cierto que se terminaron las mentiras? Quizá la verdad sea más terrible aún... una solución letal, sin retorno.</p>
+                    
 
 
 
-
-
-
-
-    
-    
-
-
-
+                    <a href="Seleccion-asiento.html" class="cta-button">Comprar Entradas</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section about">
-                    <h3 class="footer-title">Sobre Cine Ciudad</h3>
-                    <p>Disfruta de los mejores estrenos en la mejor calidad. Cine Ciudad es tu destino para una experiencia cinematográfica inolvidable.</p>
+                    <h3 class="footer-title">Sobre CineSur</h3>
+                    <p>Disfruta de los mejores estrenos en la mejor calidad. CineSur es tu destino para una experiencia cinematográfica inolvidable.</p>
                     <div class="contact">
                         <span><i class="fas fa-phone"></i>+34 610 32 54 53</span>
-                        <span><i class="fas fa-envelope"></i>info@cineciudad.com</span>
+                        <span><i class="fas fa-envelope"></i>info@cinesur.com</span>
                     </div>
                     <div class="socials">
                         <a href="https://www.facebook.com/" target="_blank">
@@ -67,12 +76,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>2024 Cine Ciudad. Todos los derechos reservados.</p>
+                <p>2024 CineSur. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../js/seat-selection.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
 
